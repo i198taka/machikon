@@ -1,0 +1,47 @@
+header {
+    background-color: #000000; /*ヘッダの背景の色*/
+    color: white; /*ヘッダの文字の色*/
+    padding: 20px; /*ヘッダ部分上下の余白*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image{
+    width:100px;/*画像の大きさ*/
+    height:auto;
+}
+summary{
+    text-align:left;/*テキストを左にそろえる*/
+    font-size:20px;
+    padding-left:20px;/*左側に20pxの余白*/
+}
+body{
+    background-color:#ffccff/*メイン部分の背景の色*/
+}
+
+
+li a{
+    display:block;
+    color:black;/*目次部分の文字色*/
+    padding:10px 0;
+
+}
+.title{
+    text-align:center;
+    text-decoration:underline;
+}
+.toc{
+    padding:0 15px;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #ff7fff;
+}
+.toc p{
+    margin: 0;
+    padding: 0;
+} 
+.q_num {
+    font-family: "にくまる";
+    color: #6690f8;
+}
