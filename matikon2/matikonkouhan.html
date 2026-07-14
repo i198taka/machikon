@@ -111,7 +111,7 @@
         <input type="text" id="pass-input" placeholder="合体漢字の答えを入力">
         <button onclick="checkAnswer()">解答</button>
     </div>
-    <div id="next_hint"　style="display:none">
+    <div id="next_hint" style="display:none">
         <h2 class="title">矢印の謎のヒント</h2>
         <details>
         <summary>ヒント１</summary>
@@ -135,7 +135,7 @@
 
     <script>
     function checkAnswer(){
-        const input_answer=document.getElementById(pass-input).value
+        const input_answer=document.getElementById("pass-input").value
         if(input_answer==="外交"){
             document.getElementById("lock-screen").style.display="none"; //入力欄を非表示
             document.getElementById("next_hint").style.display="block"; //次のヒントを表示
