@@ -40,8 +40,10 @@ li a{
     color: #6690f8;
 }
 .two-column-list {
-    column-count: 2;      /* 1. 自動で2列に分割する */
-    column-gap: 20px;     /* 2. 列と列の間のすき間 */
-    list-style-position: inside; /* リストの「・」がはみ出さないようにする */
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* 💡 絶対に「1対1」の2列にする命令 */
+    gap: 10px !important;                       /* すき間 */
     padding: 0;
+    list-style-position: inside;
 }
+
