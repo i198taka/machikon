@@ -28,6 +28,7 @@ li a{
 }
 .title{
     text-align:center;
+    text-decoration:underline;
 }
 .toc{
     padding:0 15px;
