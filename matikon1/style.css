@@ -39,11 +39,11 @@ li a{
     font-family: "にくまる";
     color: #6690f8;
 }
-.two-column-list {
+.double-list {
     display: grid !important;
-    grid-template-columns: 1fr 1fr !important; /* 💡 絶対に「1対1」の2列にする命令 */
-    gap: 10px !important;                       /* すき間 */
-    padding: 0;
-    list-style-position: inside;
+    /* 👇「1対1」の等幅で2列に分けなさい、という魔法の命令です */
+    grid-template-columns: 1fr 1fr !important; 
+    gap: 10px 20px !important; /* 行の間隔10px、列の間隔20px */
+    
+    padding-left: 20px !important; /* リストの点々（・）が見えるようにする左のスキマ */
 }
-
