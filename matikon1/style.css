@@ -21,7 +21,6 @@ body{
 }
 
 li a{
-    display:block;
     color:black;/*目次部分の文字色*/
     padding:10px 0;
 }
@@ -39,8 +38,11 @@ li a{
     font-family: "にくまる";
     color: #6690f8;
 }
-/* 2. 【追加】2列にしたいリストの中の a タグだけは、横並びを邪魔しないように上書きする */
-.double-list li a {
-    display: inline-block !important; /* blockを解除して、横並びを許可する */
-    padding: 5px 0 !important;        /* 2列用に少し余白を狭くする（お好みで） */
+.double-list {
+    display: grid !important;
+    /* 👇「1対1」の等幅で2列に分けなさい、という魔法の命令です */
+    grid-template-columns: 1fr 1fr !important; 
+    gap: 10px 20px !important; /* 行の間隔10px、列の間隔20px */
+    
+    padding-left: 20px !important; /* リストの点々（・）が見えるようにする左のスキマ */
 }
